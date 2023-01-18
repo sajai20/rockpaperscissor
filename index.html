@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCK_PAPER_SISSOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button id="clear" class="btn_clear">clear</button>
+    <button id="finish_clear" class="finish_clear">finish</button>
+    <section class="game">
+        <div class="score">
+            <div class="player_score">
+                <h3>player</h3>
+                <p>0</p>
+            </div>
+            <div class="computer_score">
+                <h3>computer</h3>
+                <p>0</p>
+            </div>
+        </div>
+
+
+        <div class="intro" id='intro'>
+            <h1>rock paper and scissor</h1>
+            <button id="play">let's play</button>
+        </div>
+
+        <div class="match fadeOut" id="match">
+            <h2 class="winner">Choose an option</h2>
+            <div class="hands">
+                <div class="box1"><img class="player-hand" src="./image/rock.png" alt="rock image"></div>
+                <div class="box1"><img class="computer-hand" src="./image/rock.png" alt="rock image"></div>
+
+
+            </div>
+            <div class="options">
+                <button class="rock">rock</button>
+                <button class="paper">paper</button>
+                <button class="scissors">scissor</button>
+            </div>
+        </div>
+
+    </section>
+    <div class="result" id="result"></div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

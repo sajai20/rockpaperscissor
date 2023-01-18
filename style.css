@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+:root {
+    --clr-dark: #1c2042;
+    --clr-white: #ffffff;
+    --clr-success: #28a745;
+    --clr-danger: #dc3545;
+    --clr-bg: #f7f7f7;
+    --clr-border: #dedede;
+    --max-width: 1140px;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--clr-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* global css */
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+section {
+    height: 80vh;
+    width: 800px;
+}
+
+.score {
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.score h3 {
+    font-size: 2rem;
+}
+
+.score p {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
+}
+
+.intro {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 1;
+}
+
+.intro h1 {
+    font-size: 50px;
+}
+
+.intro button,
+.match button,
+button {
+    cursor: pointer;
+    background-color: dodgerblue;
+    color: var(--clr-white);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    border: none;
+}
+
+.btn_clear {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.finish_clear {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* .box {
+    width: 200px;
+    height: 200px;
+} */
+
+.box1 {
+    margin-top: 30px;
+    width: 100px;
+    height: 100px;
+}
+
+.match {
+    position: absolute;
+    width: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.winner {
+    /* color: rgb(224, 224, 224); */
+    text-align: center;
+    font-size: 50px;
+}
+
+
+.hands,
+.options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.options {
+    margin-top: 50px;
+}
+
+div.fadeOut {
+    opacity: 0;
+    pointer-events: none;
+}
+
+div.fadeIn {
+    opacity: 1;
+    pointer-events: all;
+}
